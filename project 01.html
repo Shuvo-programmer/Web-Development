@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuvo Portfolio</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            margin: 0px;
+            padding: opx;
+            background-image: url('prpoject 1/img/background-image.jpg');
+            background-size: 116%;
+        }
+        .left img{
+            width: 79px;
+            border-radius: 100px;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px
+        }
+        .left div{
+            line-height: 16px;
+            font-size: 19px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .mid{
+            /* border: 2px solid pink; */
+            display: block;
+            width: 68%;
+            margin: 29px auto;
+
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: blueviolet;
+            text-decoration: none;
+            padding: 34px 24px;
+        }
+        .navbar li a:hover,
+        .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+
+
+        }
+        .right{
+            /* border: 2px solid green; */
+            display: block;
+            position: absolute;
+            right: 34px;
+            top: 43px;
+        }
+        .btn{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0px 9px;
+            background-color: rgb(167, 165, 165);
+            color: white;
+            padding: 5px 3px;
+            border: 2px solid gray;
+            border-radius: 11px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: gray;
+        }
+        .container{
+            /* border: 2px solid black; */
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .from-group input{
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 315px;
+            padding: 2px;
+            border: 2px solid black;
+            margin: 9px auto;
+            font-size: 19px;
+            border-radius: 13px;
+        }
+       .container h1{
+           text-align: center;
+       }
+       .container button{
+           display: block;
+           width: 48%;
+           margin: 20px auto;
+
+       }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="prpoject 1/img/logo.jpg" alt="">
+            <div>Shuvo Khan</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- right bor for button/serach box -->
+        <div class="right">
+            <button class="btn"><a href="#">Email Me</a></button>
+            <button class="btn"><a href="#">Call Me</a></button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="email" name="Email" placeholder="please Enter Your Email">
+            </div>
+            <div class="from-group">
+                <input type="password" name="Password" placeholder="Please Enter Your Password">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
