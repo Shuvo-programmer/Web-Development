@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+nav{
+    display: flex;
+    width: 100vw;
+    font-family: 'New Tegomin', serif;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 67vh;
+}    
+.content-center{
+    font-size: 30px;
+}
+.logo img{
+    padding: 24px;
+    border-right: 150px;
+    height: 40px;
+    width: 40px;
+}
+.container{
+    padding: 0%;
+    /* margin: 20px 10px auto; */
+    display: grid;
+    grid-template-areas: 
+    "left left mid mid right rigth";
+    /* transition: transform 0.5s; */
+    transition: all 0.2s linear;
+
+}
+.left, .mid, .right{
+    padding: 8px;
+    margin-top: 49px;
+    border-radius: 40px;
+    height: 60vh;
+
+}
+.left{
+    background-color: violet;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    grid-area: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+   
+}
+.left img{
+    /* position: relative;
+    left: 120px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+}
+.mid{
+    background-color: lawngreen;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    /* height: 60vh; */
+    grid-area: mid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    
+}
+.mid img{
+    /* position: relative;
+    left: 120px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+}
+.right{
+    
+    background-color: powderblue;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    
+}
+.right img{
+    /* position: relative;
+    left: 120px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+}
+.left:hover, .mid:hover, .right:hover{
+    background-color: lavender;
+    /* width: 40vw; */
+    /* transform: translate(50px); */
+    transform: scale(1.2);
+}
+/* child selector '>' */
+.right > button{
+    position: relative;
+    top: 255px;
+    right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.mid > button{
+    position: relative;
+    top: 255px;
+    right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.left > button{
+    position: relative;
+    top: 255px;
+    right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: linear;
+}
+.left > button:hover{
+    width: 300px;   
+}
+.mid > button:hover{
+    width: 300px;
+    
+}
+.right > button:hover{
+    width: 300px;
+    
+}
+.left  a{
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
+    font-weight: bold;
+}
+.mid  a{
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
+    font-weight: bold;
+}
+.right  a{
+    /* display: none; */
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
+    font-weight: bold;
+}
+.footer{
+    /* border: 2px solid black; */
+    height: 100px;
+    text-align: center;
+}
+.footer i{
+    margin-top: 100px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: #d4cfc49a;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px 2px#dcdde1;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+footer a{
+    padding: 8px;
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid red; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    /* border: 2px solid green; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+footer :hover i{
+    transform: scale(1.2);
+}
